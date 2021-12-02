@@ -2,9 +2,6 @@
 Advent of Code 2021
 """
 
-# TODO: Make a menu and handle multiple days
-
-
 import argparse
 import importlib
 
@@ -13,11 +10,10 @@ def main(args):
     """
     Main function
     """
-    print(args.day)
     part1 = importlib.import_module(f"days.{args.day}.part1")
     part2 = importlib.import_module(f"days.{args.day}.part2")
-    print(part1.solution())
-    print(part2.solution())
+    print(part1.solution(args.day))
+    print(part2.solution(args.day))
 
 
 if __name__ == "__main__":

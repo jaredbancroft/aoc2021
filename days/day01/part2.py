@@ -1,8 +1,8 @@
 from helpers import inputs
 
 
-def solution():
-    depths = inputs.read_to_list("inputs/day1.txt")
+def solution(day):
+    depths = inputs.read_to_list(f"inputs/{day}.txt")
     part2_total = 0
     for index, depth in enumerate(depths):
         if index - 3 >= 0:
