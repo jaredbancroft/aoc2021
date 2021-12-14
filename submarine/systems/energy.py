@@ -1,7 +1,5 @@
 from __future__ import annotations
-from dataclasses import dataclass
 from os import system, name
-from time import sleep
 from typing import Optional
 
 
